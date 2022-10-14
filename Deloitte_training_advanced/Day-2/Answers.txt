@@ -1,0 +1,18 @@
+
+1 	alert: alert("HI");
+confirm: confirm("Do you like tea?")
+Your output will be either true or false based on you click "ok" or "cancel" button
+prompt()-- only popup box which accepts input from user
+
+prompt:prompt(" ") it returns null if haven't provided anything
+
+
+2
+
+3
+push(): adds element at the end of an array
+pop(): removes element from the end of an array
+splice(): It can add and subtract elements from the array
+i.e,
+splice(2,0,"Apple","Kiwi")-- adds elements before the index 2 
+splice(2,3)- removes 3 elements from 2nd index (including 2nd index)

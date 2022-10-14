@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Server Communication using Ajax</h1>
+    <hr>
+
+    <button id="btn1" type="button">Get Users</button>
+
+    <div id="main"></div>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                var url1 = "https://reqres.in/api/users";
+                $.ajax({
+                    url: url1,
+                    type: "GET",
+                    success: function (response) {
+                        display(response.data);
+
+                    }
+
+                })
+                function display(item) {
+                    for (let i = 0; i < item.length; i++) {
+                        //alert(resp[i].avatar);
+                        let str = `<div style=" width:250px ;  margin:20px; float:left; text-align:center; padding:20px; border:1px solid black; border-radius:15%"> <img src="${item[i].avatar}"  style="border-radius:50%;"/><br/><u><h3>${item[i].first_name+" "+item[i].last_name}</h3></u><br>Email id:${item[i].email}</p></div>`
+                        $("#main").append(str);
+                    }
+
+                }
+            })
+        })
+
+    </script>
+</body>
+
+</html>

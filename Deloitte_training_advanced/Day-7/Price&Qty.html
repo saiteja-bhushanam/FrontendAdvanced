@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: beige;
+            height: 100%;
+        }
+        table{
+        text-align: center;
+        border: 1.5px solid black;
+        }
+        form{
+            position: relative;
+            left: 30%;
+            height: 300px;
+        }
+        hr{
+            margin-top: -3px;
+        }
+    </style>
+</head>
+<body>
+    <form action="server.php" method="get">
+        <table cellspacing="10">
+            <tr>
+        <td><label for="price">Price:</label></td>
+        <td><input type="text" name="price" id="price"></td>
+    </tr><tr>
+        <td><label for="qty">Quantity:</label></td>
+        <td><input type="text" name="qty" id="qty"></td>
+    </tr>    
+    <tr>
+        <td><input type="button" id="btn" value="Get value"></td>
+    </tr>
+    <tr>
+
+    </tr>
+    </table>
+<hr>    
+</form>
+    
+    <p id="showdetails"></p>
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+            let uprice=$("#price").val();
+            let qty=$("#qty").val();
+            if(isNaN(parseInt(uprice))==true && isNaN(parseInt(qty))==true){
+                console.log("Enter Correct Details")
+            }
+            else{
+            let total=parseFloat(uprice)*parseFloat(qty);
+            $("#showdetails").html("Price : "+total);}
+        })
+    })
+
+</script>
+    
+    
+</body>
+</html>

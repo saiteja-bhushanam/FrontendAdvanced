@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="tab1">
+        
+            
+        <tr id="table2"></tr>
+    </table>
+    <p id="print"></p>
+    <button type="button" onclick="print_table()">Print_table</button>
+<script>
+    function print_table(){
+    var tableObj=document.getElementById("tab1");
+    tableObj.style.borderColor="blue";
+    tableObj.style.borderWidth="2px";
+    tableObj.style.padding="2px";
+    tableObj.border="2"
+    var arr=['HTML5','CSS3','JQuery','BootStrap','Angular'];
+    str='<tr><th>Courses</th><th>Courses</th><th>Courses</th><th>Courses</th></tr>'
+    var k=0;
+    for(var i=0;i<5;i++){
+        str+='<tr>';
+        for(var j=0;j<4;j++){
+            str+='<td>'
+                str+=arr[k];
+                if(k==4){
+                    k=-1;
+                }
+                k+=1
+            }
+            str+='</td>';
+        }
+        str+='</tr>';
+    document.getElementById("tab1").innerHTML=str;}
+
+</script>    
+</body>
+
+</html>

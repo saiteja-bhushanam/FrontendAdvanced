@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="login.php" method="get" onsubmit="validation()" >
+        <label for="cname">Customer Name</label>
+        <br>
+        <input type="text" name="cname" id="cname" autofocus onblur="reqText()">
+        <br><br>
+        <label for="sourcestation">Source Station</label>
+        <br>
+        <input type="text" name="sourcestation" id="sourcestation">
+        <br><br>
+        <label for="deststation">Destination station</label>
+        <br>
+        <input type="text" name="deststation" id="deststation">
+        <br><br>
+        <label for="phno">Phone number:</label>
+        <input type="text" name="phno" id="phno">
+
+        <br><br>
+        <input type="submit" value="submit" >
+
+    </form>
+    <script>
+        function reqText(){
+
+        }
+        function validation(){
+            alert("hi")
+    var source = document.getElementById("sourcestation").value;
+    var destination= document.getElementById("deststation").value;
+    alert("source=")
+    if(source==destination){
+        event.preventDefault();
+        alert("Source and Destination are same");
+    }
+}
+    </script>
+</body>
+</html>

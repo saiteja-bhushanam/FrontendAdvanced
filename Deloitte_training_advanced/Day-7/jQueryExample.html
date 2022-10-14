@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="server.php" method="get">
+        <table cellspacing="10">
+            <tr>
+                <td><label for="first">First:</label></td>
+                <td><input type="text" name="First" id="first"></td>
+            </tr>
+            <tr>
+                <td><label for="second">Second:</label></td>
+                <td><input type="text" name="Second" id="second"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" class="op" value="+">
+                    <input type="button" class="op" value="-">
+                    <input type="button" class="op" value="*">
+                    <input type="button" class="op" value="/">
+                </td>
+            </tr>
+        </table>
+        <hr>
+    </form>
+    <p id="disp"></p>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <script>
+    $(document).ready(function(){
+        $(".op").click(function(){
+        let fn=parseInt($("#first").val());
+        let sn=parseInt($("#second").val());
+        let display=$("#disp");
+        let op= $(this).val();
+        switch(op){
+            case "+" : display.html(fn+sn);break;
+            case "-" : display.html(fn-sn);break;
+            case "*" : display.html(fn*sn);break;
+            case "/" : display.html(fn/sn);break;
+        }
+    })    
+    });
+
+
+    </script>
+
+
+</body>
+
+</html>

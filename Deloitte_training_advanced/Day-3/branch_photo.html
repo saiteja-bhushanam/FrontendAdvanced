@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="city" id="city" onchange="func_img(event)">
+
+        <option value="Hyd.jpg">Hyd</option>
+        <option value="Banglore.jpg">Bangalore</option>
+        <option value="chennai.jpg">Chennai</option>
+        <option value="pune.jpg">Pune</option>
+    </select>
+
+    <img src="Hyd.jpg" id="img" alt="">
+    
+    <script>
+        function func_img(evt){
+            var imgObj=document.getElementById("img");
+            // alert(event.target.value)
+            imgObj.src=evt.target.value;
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        input{
+            margin-right: 40px;
+        }
+        button{
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center ;">Employee data</h1>
+    <hr>
+    Search value:<input type="text">
+    <button type="button" onclick="findbyempno()">Find by employee number</button>
+
+    <button type="button" onclick="findbyjob()">Find by job</button>
+    <br><br>
+    <table id="emp_table"></table>
+
+
+    <script>
+        console.log("hi");
+        array=[{"empno":1025,"ename":"Scott","job":"Lead","Salary":45000,"Deptno":1},{"empno":1026,"ename":"Scott1","job":"Lead","Salary":46000,"Deptno":2},{"empno":1027,"ename":"Scott2","job":"Lead","Salary":47000,"Deptno":3},{"empno":1028,"ename":"Scott3","job":"Lead","Salary":49000,"Deptno":4},]
+        str="";
+        var table= document.getElementById("emp_table")
+        str+="<tr>"+"<th>"+"Empno"+"</th>"+"<th>"+"Ename"+"</th>"+"<th>"+"Job"+"</th>"+"<th>"+"Salary"+"</th>"+"<th>"+"Deptno"+"</th>"+"</tr>";
+        table.innerHTML=str;
+        table.style.border="2px double black";
+        table.cellPadding=10;
+        table.cellSpacing=10;
+        clearrows();
+        
+
+        function findbyempno(){
+            clearrows();
+            let id=parseInt(document.getElementsByTagName("input")[0].value);
+            if(id==NaN){
+                console.log("No such id exists");
+            }
+            else if(array.find(item => item.empno==id) !=null){
+                var row=table.insertRow(-1);
+                var cell1=row.insertCell(-1);
+                var cell2=row.insertCell(-1);
+                var cell3=row.insertCell(-1);
+                var cell4=row.insertCell(-1);
+                var cell5=row.insertCell(-1);
+
+                var searchedArray=array.find(item => item.empno==id)
+                cell1.innerHTML=searchedArray.empno;
+                cell2.innerHTML=searchedArray.ename;              
+                cell3.innerHTML=searchedArray.job;
+                cell4.innerHTML=searchedArray.Salary;
+                cell5.innerHTML=searchedArray.Deptno;
+
+            }
+
+        }
+
+        function findbyjob(){
+            clearrows();
+            let pos=document.getElementsByTagName("input")[0].value;
+            if(array.filter(item=>item.job==pos)!=null){
+                var searchedArrays=array.filter(item=>item.job==pos);
+                for(let i of searchedArrays){
+                    var row=table.insertRow(-1);
+                var cell1=row.insertCell(-1);
+                var cell2=row.insertCell(-1);
+                var cell3=row.insertCell(-1);
+                var cell4=row.insertCell(-1);
+                var cell5=row.insertCell(-1);
+                cell1.innerHTML=i.empno;
+                cell2.innerHTML=i.ename;              
+                cell3.innerHTML=i.job;
+                cell4.innerHTML=i.Salary;
+                cell5.innerHTML=i.Deptno;
+
+
+                }
+            }
+        }
+
+        function clearrows(){
+        var count=table.rows.length-1;
+            for(let i=0;i<count;i++){
+                table.deleteRow(-1);
+            }
+        }
+        
+    </script>
+    <script src="2.js"></script>
+</body>
+</html>

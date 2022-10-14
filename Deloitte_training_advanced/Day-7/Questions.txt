@@ -1,0 +1,40 @@
+Check the different types of selectors in CSS
+Details about CDN
+Difference between "this" and $("this")
+document.ready()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Types of selectors
+tag-->tag like p...etc.
+id---> #idName
+class -->.className
+tag.className --> all tags with classname= className
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+CDN(Content Delivery Network):
+CDN is geographically distributed group of servers which work together to provide fast delivery of Internet content.
+allows for quick transfer of assets needed for loading content 
+
+Benefits:
+Improves loading time as content closer to the CDN server will be loaded so bouncerates etc. will decrease as visitors will not prefer to visit website with large loading time
+
+CDN can handle more traffic dur to distribution of files
+
+They can also reduce the amount of data being transferred using techniques such as minification
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+this is used in plain javascript i.e,we can use DOM methods on in like document.getElementById() etc on it
+and also used in classes to increse the scope of the variable to class scope instead of function scope
+but $("this") is used in Jquery which refers to the current jQuery Object so all jQuery methods can be used on it
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$(document).ready(function(){})--> it basically says that javascript should be executed after loading all the DOM elements
+
+
+
+

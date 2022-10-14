@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="table1" border="1" cellspacing="0" cellpadding="1" align="center">
+        <tr>
+            <td>Firstname</td>
+            <td>Steve</td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>Smith</td>
+        </tr>
+        <tr>
+            <td>Phone number</td>
+            <td>2345263734</td>
+        </tr>
+        <tr>
+            <td>Email </td>
+            <td>fsdj@gmail.com</td>
+        </tr>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+        <script>
+            $("#table1 td").css({"color":"brown","background-color":"yellow"})
+var fColor=$("#table1 td").css("color");
+var bColor=$("#table1 td").css("background-color");
+
+            $("#table1 td").mouseover(function(){
+                $(this).css({"background-color":fColor,"color":bColor})
+            })
+
+            $("#table1 td").mouseout(function(){
+                $(this).css({"background-color":bColor,"color":fColor})
+            })
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+1.Difference between ==  and ===?
+2. What does the isNaN() function?
+3. Difference between Client side JavaScript and Server side JavaScript?
+
+
+
+
+
+Answers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+1.== just compares the value where as === will also compare the datatype
+2. isNaN() will return true if not a number and it will return false if its a number
+3
+Client vs. server scripting
+Client-side scripting	Server-side scripting
+Runs on the user's computer, i .e. browser interprets the script	Runs on the web server
+Source code is visible to the user.	Source code is not visible to the user because the output of a server-side program is an HTML page.
+Used for validations and functionality for the user events	Used for business logic and data access from the database. The pages are created dynamically.
+Depends on the browser and version.	Doesn't depend on the client. Any server-side technology can be used.

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="btn" onclick="function_f1()"></button>
+    <!--<button type="button" id="btn" ondragstart="function_f1()"></button>-->
+    <button type="button" id="btn-dbl" ondblclick="function_f2()"></button>
+    <script>
+       function function_f1()
+        {
+            
+            alert(event.target.id);
+        }
+        function function_f2()
+        {
+            
+            alert(event.target.id);
+        }
+    </script>
+    
+</body>
+</html>

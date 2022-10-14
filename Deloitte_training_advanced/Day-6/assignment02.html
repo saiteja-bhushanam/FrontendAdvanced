@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tabl1 {
+            border: 3.5px solid black;
+            padding: 0px;
+            width: 100%;
+        }
+        body{
+            margin: 20px;
+            background-color: white;
+
+        }
+        html{
+            background-color: beige;
+        }
+
+        th,td {
+            margin: 0px;
+            border: 1px solid black;
+            text-align: center;
+            background-color: aquamarine;
+        }
+        td img{
+            border-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxERDw8QDhMQEBEREBARDxARDxAQEREPFxMXFxYXGBYZHyoiGRsnHBYUIzMjKCstMDAwGCI2OzYvOiovMC0BCwsLDw4PHBERGi8nIicvLy0vNC0vMS8xLy8vLy8vLy8vLy8vLy8vMS8tLy8vLzExLy8vLzAvLy8vLzIvLy8vL//AABEIANwA5QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUBAgMGB//EADwQAAIBAgEIBwcDAgcBAAAAAAABAgMRMQQFEiFBUXGhIjJSYYGR0RQVU3KSscFCYuGCojNDg7LC8PET/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAIEAQMGBQf/xAA3EQACAQICBgYIBwEBAAAAAAAAAQIDEQQFITFBUXHRExVhgaHBBhIiU5GSsfAUMkJScqLhYiP/2gAMAwEAAhEDEQA/APuIAAAAAAAAAAAAAAAAAABR5xytym6dNtRjqnJOzlLcnsS2+WwrYvF08LSdWpq8W9yJRi5OyLwHmFkmhaUHoS7UdT8d5c5tyz/6RelZTi7TSw7mu5+pSy/N6eLk6fq+rLXa97rsf+GZU3HSTgAesQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIucK+hSnJYpWj8z1Lm0UmS07Jc3tb2smZ9neVOmu+b4rVH7y8jjBHEekmJ9euqS1RXi9P0sWaK0XNrHPJ6mhWhLZJ6E+Dw525nVkfLKd4tHiYTEPD1o1Vsd+fgbJK6sekBHyKtp04S2tdLulhJedyQfUYyUkmtT0lIAAyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARsvraFKc1il0fmeqPNoxKSinKWpaWClqVNOtUls0tGPyrV97vxO8URskp2il3EpHyzFVnXqyqS2tv4l2KsrA0qLUdTSSK6JHXMVX/ABKb/S1NfLL+U/Mtzz2ST0K9N7JXg/HDml5noT6NkmI6bBx3x9n4avCxUqK0gAD1jWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACnz5Uu6dNbW5y4LUub/tLg87Wnp1qktiehHgtT56T8Tx88xHQ4OSWuXs/HX4XNlNXkdKa1G6NYo6HzxlsGrNjBgETLIPR1amsH3rWi/yaspwjNfqinwuilqrUS8wz6M6fYd1wld/fSOp9GsT6tWdF/qV1xX+fQ0Vo6LlqADsyuAAAAAAAAAAAAAAAACHleXU6dtJ9J4RSbb8NnFkZzjCLlJpJbXoBMBSyzzL9FLV+6ei/JJ/c198Vfhx+uXoeZLO8BF2dVdyb8iapyewvAUfvmp8OP1v0Hvir8OP1S9CPXuX+88JcjPRT3F4Cj981Phx+t+g981Phx+t+g6+y/3n9Zch0UtxeAo/e9bsU/qkPe1XsQ85Dr7L/ef1lyHRT3Fnl9fQpTmsUuj8z1R5tFHklO0Uu42ynKalVRjNQUVJSaje7awxZ0gjmc8zCniqkVSd4xXi9fkbqcHHWdEjYwZPANoDAAOckc8iqaFeL2Tbg+GMeat4nZkXKoNro6mrWe5p3T8y3gsR+Hrwq7n4bfAjJXVj0oKL3rW7MP7vUz72rdiHnI7rr7L/AHn9Zcit0UtxeAo/e9b4cPrl6D3xV+HD6peg69y/3nhLkOiluLwFH73rfDh9UvQz73q/Dj9b9B17l/vPCXIdFPcXYKP3xW+HD636GVnir8KL/wBRr/iOvcB7zwlyHRS3F2Cop56X+ZCUP3JqcV+eRZ0akZRUoNSTwad0X6GLoYhf+U1Lg/LX4EHFrWdAAWDAPMUulKUpa5OT0r7LO1vDA9OUOc6DpzdRf4c30v2Sf4f34o8H0hw86uGUofpd2uzf3G2k0mSKMoJLoq+86+0R3ECnO51TOThmmIpxUY+qkv8AlG9wTJXtEdxn2iO7mRDJnrjFb18q5GOjiSfaI7jPtEd3MigdcYrevlXIdHEle0R7Jj2ldkjAdcYv9y+C5Do4nepXTTWiR0jJkqYjFVcRJSqO7WjUl9CailqAAK5kAAAwZpys72uATp1JU5Kcda0ow1cke1Ls/Ye0rcRgeh1xi/3L4LkR6OJJ9oj2TPtEd3MigdcYrevlXIx0aJPtEdxn2iPZ5kUGeuMVvXyrkOjiSfaI7g68dxFMNhZxit6+VGejibZToPqxS3muZZNVakF1XC7WxNNJeav5HDKKyivslrbe5LaWeaskcI6UuvO2l3JYR8Nfiz0ckhVr43p7JJa7Ky0q1rLa9ZCpZRsWAAO3KwNJxTTUkmmrNNXTRuAChyvN8qd5U7zp7Y63OPDtLnxOVGspJNM9GVeXZtUm50rQm8ezLjuff9zmczyGNS9TDaH+3Y+G7hqfYboVbaGcEzJEhVak4STjJYxeP8rvJEZHGTpyg3GSs0WFpOgMGSBkAAAAAAAAAAAAAAAAAAAAAGtw2c5zsLA2ciPUqttRgnKTwisf4XeZpQnVbVPUk7Sm+qvV9xdZHkkKa6OtvrSeuUuL/B72WZJUxNp1PZhv2vhz+FzVOoloWsjZBm3RanUtKexfpjw3vvLMA7mhQp0IKnTVkvvvfaVm29LAANpgAAAAAAi5ZkkKitNa11ZLU4vuZS1qcqLtPXFu0ZrB9z3M9IaTgpJqSTT1NNXTR5uYZXRxkfa0S2Nee9faJxm4lHCpc6JmuV5ulTvKleUMXDW5R4dpd2PE40K6ktRweNwFbCT9SouD2Ph96C1GSktBKBombFEkZAAAAAAAAAAAAANQAYbMSkR6lVtqMU5SfVisX/HeThCU5KMVdswzatWUVdux1yXN86lpVbwp7Ia1OXHsrnwJWQZt0Wp1bSnil+mPDe+8tDsssyCNO1TE6XsjsXHfw1FedW+hHOnTUUoxSSSsklZJHQA6c0gAAAAAAAAAAAAAAArMuzapNzp2jPF9mXFbH3/cswaq1CnXg6dRXT++59plNrSjzVGo7tSTUk7STxTJMWRaM9OU6nbbl4fp5JEpI+YYmMI1ZRpu8U3bhfQXFq0m4AK5IAAAAAAAAAHOTOhzkggcKcJ1JOENnWm+rFfl9xc5FkUaa6OtvrSeL/juKzNc9Cu4vCpHnG7XJy8i+O9yDDUFh1Wivad03u06luVrdpVqt3sAAe+agAAAAAAAAAAAAAAAAAAQM8VdGjK2MrQX9Wp8rvwJ5SZ5qaVSENkU5S4vVHkpeZSzHEfh8LOpttZcXoXPuJQV3Y4ZPCysd0aQR0PmLLpkAGAAAAAAAAAADSRuasAiZRJwcKixg1LyxXldHpIu6utuBQV43TLHM1XSoxTxjeD8MOVjr/RnEfnov+S+j8ivWWplgADrTQAAAAAAAAAAAAAAAAAADzUJadSdTZJ6vkWqPJLzLfO1fQoztqbtGPGWq/hrfgVWTwskluOV9JsTaMKC/k/ovM30VtO8UbmqNjjSwADW4Bk1bMSkR6la7UYJyk8IrF+i7ycISm1GKu2YJGkbI41MjrQSk0pLbGPWj6+BijXTSadyxicFWwzSqxtf74cdxhST1EgyaJmxUJGQAAc5ozmepo1ZweE43XzRx8019JlkWrPQnCp2Hd8MJcmz0cqxH4fFQm9V7Pg9D+GvuITV4npQYRk+llMAAAAAAAAAAAAAAAAAApM81NKpTprCKc5cXqjy0vM1giPGpp1J1Nkp9H5V0VyV/EkxPm2b4jp8XOS1XsuC0f73lymrRNgYMOR5hMy2c5zscq1dRX/cSRkmbZTtKteMcVTwk/m3Lu/8L+Cy+ti5+rTXFvUuPIhKajrI9GnOq7U9UU7Sm+quHaZdZHkcKStFXb60nrcuL/B3hFJJRSSWpJKySNzu8vyujg4+zpltb8ty+3crSm5awVeW5rUm50+hPFrGEn3rY+9cy0Bdr0KdeDp1I3T++7uIptO6PNRquMtConCSxT+63rvJEZFrleSwqK0lh1ZLVKL3plJlFGdF9LpQ2TWHB7ny+xxOZ5HUw96lL2oeK49nau+xZhUT0MkGxxp1LnRM542g4V4XTJLOU0ZQJ+aK2nRjvjeD/pw81Z+JPKTMs9GpOGyUVJfMseTj5F2fTctxH4jCwqPXaz4rQ/pfvKUlZ2AALxEAAAAAAAAAAAAEbL6ujSqSWKi7cbauZJIedYXo1Euzfy1/ghVbUJNa7P6BFNkkLRSWxElHDJ5LRRmpWSxPlDL50lI4ucpy0ILSlu3LffYjbJ8mnWd1eFPbNrrL9q/OHEuslyaFOOjBWW14tve3tZ0OWZFUrWqVvZh4vku19280zqpaERcizaqdpy6dTfsXyr84/YsgDtKNGFGChTVktxXbvpYABtMAAAA1lFNNNJpqzT1po2ABSZZm2UOnQ1x207/7fTy3EahXUvytqe5npCvy/N0anSj0Z9pLU+5rb9znMzyGFa9TD6Jbtj4bn4cDdCrbQyHpBkZylTloVFovY8VL5XtOyqI4urRnSm4TVmtjLCd9RzhLRrUZfvs+DvH8nozzb11KUVi6kfJO75JnpDtfRpt4WSeyXkitW/MAAdEagAAAAAAAAAAAAAACqqZmg23GUoJ69FWcVwutR1oZqpRs2nOS2ybf9uHIsAVI4HDQn68acU99iTk7WuAAWyIAAAAAAAAAAAAAABzq0oyTjNKSeKetFfPMsP8ALlKHc3pLnr5loDRWw1GsrVYKXFeesym1qIOR5ujTeleUpWtpPYu5LAnAE6VGFKPqU0ktyDd9YABsMAAAAAAH/9k=');
+            border:2px 
+        }
+
+    </style>
+</head>
+
+<body>
+    <table id="tabl1" cellpadding="3" cellspacing="0">
+        <thead>
+
+            <tr>
+                <th>S.No</th>
+                <th>Email</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Avatar</th>
+            </tr>
+        </thead>
+    </table>
+    <br><br><br>
+
+    <button type="button" id="btn">Show Data</button>
+    <script>
+        var b_data = document.getElementById("btn");
+        var tab1 = document.getElementById("tabl1");
+        b_data.addEventListener("click", data);
+        b_data.addEventListener("click", clearpage);
+            function data() {
+                alert("hi");
+                let url = "https://reqres.in/api/users";
+                fetch(url).then((response) => {
+                    response.json().then((mod_response) => {
+                        displayTable(mod_response.data);
+                    })
+                });
+            }
+
+            function clearpage(){
+                var count=tab1.rows.length-1
+                for(let i=0;i<count;i++){
+                    tab1.deleteRow(-1);
+                }
+            }
+
+        function displayTable(info) {
+            
+            for (let i = 0; i < info.length; i++) {
+                let tr = tab1.insertRow(-1);
+                let t1 = tr.insertCell(-1);
+                let t2 = tr.insertCell(-1);
+                let t3 = tr.insertCell(-1);
+                let t4 = tr.insertCell(-1);
+                let t5 = tr.insertCell(-1);
+                t1.innerHTML = info[i].id;
+                t2.innerHTML = info[i].email;
+                t3.innerHTML = info[i].first_name;
+                t4.innerHTML = info[i].last_name;
+                t5.innerHTML = `<img src=${info[i].avatar} alt=" image picture">`;
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>

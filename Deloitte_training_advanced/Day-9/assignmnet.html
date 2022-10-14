@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c1{
+            font-weight: bold;
+        }
+        .c3{
+            text-decoration: underline;
+        }
+        .c2{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <button type="button" id="bold">bold</button>
+    <button type="button" id="underline">underline</button>
+    <button type="button" id="italic">italic</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis a doloribus consequatur voluptas placeat. Eos, laborum et iste debitis eveniet magnam magni! Atque quasi iusto nostrum adipisci vel aperiam magni consequuntur enim perspiciatis reiciendis a eos dolore blanditiis, impedit omnis, quaerat molestias sed, magnam aliquam? Culpa nemo vitae totam aspernatur nobis sunt cupiditate sint! Id ipsum recusandae blanditiis, repellendus exercitationem maiores aperiam obcaecati numquam voluptates, dolorum sint accusantium et cupiditate earum maxime in, natus at. Maxime obcaecati minima tempora ex? Excepturi numquam consequatur earum repellat pariatur molestias dolor blanditiis repudiandae cumque architecto, saepe culpa dolorum aliquam debitis vero labore iure autem voluptates. Totam explicabo quasi consequuntur ipsam cum. Voluptatum, temporibus! Quibusdam unde iste consequatur ullam ad quos amet, facilis, earum mollitia fugiat ab beatae perferendis expedita officia, vero pariatur nostrum consectetur culpa aliquid corporis aut nemo. Iure voluptatum porro ratione iusto, fugit eius ut. Ducimus reprehenderit exercitationem qui error vitae facere pariatur ipsa similique, deserunt cum quasi nesciunt dolorem harum, earum assumenda aut natus omnis nobis consequatur accusantium ex rerum. Laudantium unde porro reprehenderit dolorum minima perferendis, quas aut at, velit et aliquid cumque quo, mollitia itaque doloremque id consectetur. Sit repellendus necessitatibus rem laudantium saepe molestiae quae quo molestias, tenetur illum dolor at quod. Asperiores similique nisi vero expedita laboriosam eos adipisci aut maiores molestias magnam temporibus, maxime veritatis quia consectetur enim eius eligendi optio atque corrupti quasi! Ad iure corrupti id, doloribus impedit necessitatibus eaque, sed sint quae blanditiis nemo qui quaerat. Amet magnam ullam corporis aut eligendi suscipit mollitia totam ipsum esse sunt! Voluptas dolor earum qui libero sed magni ullam officia nulla, ipsum aliquid voluptatibus dignissimos numquam omnis officiis distinctio eius eum nisi tempore a illum! Quod error et velit harum minus excepturi id quia voluptas voluptatibus dicta hic, incidunt fugiat provident ea corrupti commodi in repellat eaque quos iure ullam, rem tempore? Magnam voluptatem accusantium fugiat odit praesentium rem ipsum modi maxime cum provident dolor debitis consectetur assumenda ullam nobis sint dolores labore quaerat consequatur, qui sapiente asperiores. Excepturi dignissimos maiores aliquam non modi, minima inventore. Harum, vitae dolore ad tempore, accusantium, nihil enim at libero obcaecati nam rerum ratione similique fuga quia! Iusto recusandae enim officiis necessitatibus facere deleniti dignissimos consequuntur distinctio, ipsam nesciunt? Repellendus esse labore adipisci iste eaque distinctio perspiciatis voluptates ex. Omnis, dolore dolorem nisi ipsam quisquam perspiciatis impedit optio ducimus dignissimos sed vel nemo expedita similique et amet tempora laborum.</p>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <script>
+        $("#bold").click(function(){
+            $("p").toggleClass("c1")
+        })
+        $("#italic").click(function(){
+            $("p").toggleClass("c2")
+        })
+        $("#underline").click(function(){
+            $("p").toggleClass("c3")
+        })
+
+    </script>
+</body>
+
+</html>

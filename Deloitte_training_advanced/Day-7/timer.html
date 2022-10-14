@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="time"></h1>
+    <button type="button" id="start">Start</button>
+    <button type="button" id="clear">clear</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            var begin = true;
+            $("#start").click(function () {
+                begin = false;
+                if (begin == false) {
+                    let h = 0;
+                    let m = 0;
+                    let sec = 0;
+                    window.print = setInterval(function () {
+
+                        sec += 1;
+                        if (sec == 60) {
+                            m += 1;
+                            sec = 0;
+                        }
+                        if (m == 60) {
+                            m = 0;
+                            h += 1;
+                        }
+
+                        if (h < 10) {
+                            h_deg = "0" + h;
+                        }
+                        else if (h >= 10) {
+                            h_deg = h;
+                        }
+
+                        if (m < 10) {
+                            m_deg = "0" + m;
+                        }
+                        else if (m >= 10) {
+                            m_deg = m;
+                        }
+
+                        if (sec < 10) {
+                            sec_deg = "0" + sec;
+                        }
+                        else if (sec >= 10) {
+                            sec_deg = sec;
+                        }
+
+
+
+
+                        $("#time").html(h_deg + ":" + m_deg + ":" + sec_deg);
+                    }, 100);
+                }
+            });
+
+            $("#clear").click(function () {
+                clearInterval(window.print);
+                $("#time").html("00:00:00")
+            });
+        });
+
+    </script>
+</body>
+
+</html>

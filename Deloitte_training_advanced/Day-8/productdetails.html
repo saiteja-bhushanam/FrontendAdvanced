@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" id="btn">Fill the details</button>
+    <input type="text" name="" id="t1"  placeholder="Name">
+    <input type="text" name="" id="t2" placeholder="Quantity">
+    <input type="text" name="" id="t3" placeholder="unitPrice">
+    <table>
+        <tr>
+            
+            <td>Name</td>
+            <td>Quantity</td>
+            <td>unitPrice</td>
+        </tr>
+        <tr>
+            
+            <td>first</td>
+            <td>1</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            
+            <td>second</td>
+            <td>2</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            
+            <td>third</td>
+            <td>3</td>
+            <td>150</td>
+        </tr>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function(){
+                var name=$("#t1").val();
+                var qty=$("#t2").val();
+                var price=$("#t3").val();
+                str=`<tr style="background-color:aqua"><td>${name}</td><td>${qty}</td><td>${price}</td></tr>`;
+                $("table").append(str);
+            })
+
+
+
+        })</script>
+</body>
+
+</html>

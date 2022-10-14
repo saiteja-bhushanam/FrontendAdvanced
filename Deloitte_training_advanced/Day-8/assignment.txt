@@ -1,0 +1,9 @@
+The prev() method returns the previous sibling element of the selected element.
+
+
+$("li.start").prev().css({"color": "red", "border": "2px solid red"});
+-----------------------------------------------------------------------------------------------
+The next() method returns the next sibling element of the selected element.
+
+
+$("li.start").next().css({"color": "red", "border": "2px solid red"});

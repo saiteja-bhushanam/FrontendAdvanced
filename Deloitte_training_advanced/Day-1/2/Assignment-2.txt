@@ -1,0 +1,23 @@
+Questions
+1. Is it possible to disable JavaScript in browser?  If yes, How to disable javascript in browser?
+2. What is the difference between undefined and not defined in JavaScript?
+3.  What are the differences between Java and JavaScript ?
+4. What are JavaScript Data Types ?
+
+
+-------------------------------------------------------------------------------
+1. Open Devtools
+ Ctrl+shift+p and disable javascript
+
+
+2.undefined occurs when only variable is declared but not initialized but not defined occurs when variable is not declared
+
+3.Java is serverside programming language and javascript is clientside programming language . JS is used to add dynamic behaviour to the clientside
+Java is an object-oriented programming language.	JavaScript is an object-based scripting language.
+Java has a thread-based approach to concurrency.	Javascript has an event-based approach to concurrency. 
+Java is standalone					javascript is not standalone
+
+JavaScript is a loosely typed language, meaning you don’t have to specify what type of information will be stored in a variable in advance. but in java we have to specify the variable type in advance
+
+
+4.Boolean, number, String,Array, Undefined,null,Objects

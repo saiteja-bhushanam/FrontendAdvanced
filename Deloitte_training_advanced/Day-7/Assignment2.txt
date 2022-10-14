@@ -1,0 +1,12 @@
+The one() method attaches one or more event handlers for the selected elements, and specifies a function to run when the event occurs.
+
+When using the one() method, the event handler function is only run ONCE for each element.
+
+$("p").one("click", function(){
+  $(this).animate({fontSize: "+=6px"});
+});
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$(input:text) is used to select all textboxes
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
